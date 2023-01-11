@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px repeat(4,1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); */
+    grid-template-rows: .70fr .55fr .80fr 1fr;
+    gap: 10px;
+}
+
+.div {
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar {
+    background-color: purple;
+    grid-row: 1 / -1;
+}
+
+.header {
+    background-color: green;
+    grid-column: 2 / -1;
+}
+
+.start_one,
+.start_two,
+.start_three,
+.start_four {
+    background-color: blue;
+}
+
+.chart_one {
+    background-color: brown;
+    grid-column: 2 / 4;
+}
+
+.chart_two {
+    background-color: burlywood;
+    grid-column: 4 / -1;
+}
+
+.overflow_one {
+    background-color: cornflowerblue;
+    grid-column: 2 / 5;
+}
+
+.overflow_two {
+    background-color: rgb(196, 99, 115);
+}
